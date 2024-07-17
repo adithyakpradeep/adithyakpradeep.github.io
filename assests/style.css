@@ -165,7 +165,7 @@ section {
 }
 
 .progress-bar {
-    background-color: #2e5f8a;
+    background-color: #F9A825;
     height: 30px;
     border-radius: 20px;
     text-align: right;
@@ -303,7 +303,7 @@ li {
 
 .contact-form input[type="submit"] {
     padding: 10px;
-    background-color: #FFD54F;
+    background-color:#F9A825;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -312,7 +312,7 @@ li {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #F9A825;
+    background-color: #FFD54F;
 }
 /* Footer Section */
 footer {
