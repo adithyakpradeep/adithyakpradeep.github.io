@@ -1,0 +1,326 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A0E1A;
+    color: #fff;
+    line-height: 1.6;
+    padding-top: 70px; /* Adjust this value based on the height of the nav */
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    padding-top: 6px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.cta {
+    text-decoration: none;
+    background-color: #1D1E22;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin-left: 20px; /* Add margin to separate it from the ul */
+}
+
+.cta:hover {
+    background-color: #fff;
+    color: #0A0E1A;
+}
+
+/* Section and Container Styling */
+section {
+    padding: 60px 0; /* Add padding to create spacing between sections */
+    margin-bottom: 50px; /* Add margin to ensure sections are separated */
+}
+
+.container, .container-project {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 100px 0; /* Add padding for visual spacing */
+    padding-top: 200px;
+}
+
+#home h1 {
+    font-size: 3rem;
+}
+
+#wave {
+    display: inline-block;
+    animation: wave-animation 2s infinite;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(20deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #F9A825;
+}
+
+.download-cv {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #1D1E22;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-cv:hover {
+    background-color: #fff;
+    color: #0A0E1A;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0; /* Add padding for visual spacing */
+}
+
+.about-section {
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-content div {
+    max-width: 60%;
+}
+
+.about-content img {
+    border-radius: 10px;
+    max-width: 25%;
+    height: auto;
+}
+
+/* Skills Section */
+.progress {
+    background-color: #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #2e5f8a;
+    height: 30px;
+    border-radius: 20px;
+    text-align: right;
+    line-height: 30px;
+    color: #fff;
+    padding-right: 10px;
+}
+
+/* Projects Section */
+.container-project {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#Projects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+}
+
+#Projects h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    width: 100%;
+}
+
+.projects-grid > div {
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a09e9e41;
+}
+
+.projects-grid > div:nth-child(1) {
+    grid-column: span 2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+/* Contact Form Section */
+.contact {
+    margin: 0 auto;
+    padding: 120px;
+    padding-bottom: 50px;
+}
+
+/* Ensure all h tags are aligned to the left */
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+}
+.social-icons a {
+    margin: 0 10px;
+    color:#ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+    }
+
+.contact h1 {
+    
+    color: #ffffff;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    padding-right: 20px;
+    min-width: 300px;
+}
+
+.contact-info h3 {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact-info .social-icons a {
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 24px;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px;
+    background-color: #FFD54F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #F9A825;
+}
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
