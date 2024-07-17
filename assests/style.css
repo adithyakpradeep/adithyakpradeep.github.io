@@ -227,9 +227,7 @@ li {
 }
 
 /* Ensure all h tags are aligned to the left */
-h1, h2, h3, h4, h5, h6 {
-    text-align: left;
-}
+
 .social-icons a {
     margin: 0 10px;
     color:#ffffff;
